@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse4 Pets</title>
+  
+  <!-- UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFDC26",
+            cardcolor: "#F9DF8A",
+            Secondary: "#FFF9F4"
+
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- Font cdn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+  rel="stylesheet">
+
+  <style>
+ .font-adlam {
+      font-family: "ADLaM Display";
+    }
+
+    .font-family-sora {
+      font-family: "Sora";
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: red;
+      }
+
+      25% {
+        color: blue;
+      }
+
+      50% {
+        color: green;
+      }
+
+      75% {
+        color: orange;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    .animated-text {
+      font-size: 40px;
+      font-weight: bold;
+      animation: colorChange 3s infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- navbar -->
+    <nav class="font-family-sora bg-Secondary">
+      <div class="navbar items-center mx-auto lg:px-0 px-1 mx-3 max-w-screen-xl  font-family-sora">
+        <div class="navbar-start">
+          <div class="h-8 w-8">
+            <img src="images/logo-header.png" alt="logo-header">
+          </div>
+          <a class="hidden font-bold ml-3 lg:flex text-3xl ">Browse<span class="text-primary">4</span>Pets</a>
+        </div>
+        <div class="navbar-center lg:flex hidden  gap-8">
+          <ul class="menu px-1 menu-horizontal gap-5 font-semibold ">
+            <li>Find a pet</li>
+            <li>Breeds</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <div class="navbar-end gap-4">
+          <div class="hidden lg:flex">
+            <img src="images/bell (1) 1.png" alt="bell">
+          </div>
+          <div class="hidden lg:flex">
+            <img src="images/Search.png" alt="Search">
+          </div>
+          <button
+            class="hidden border-primary hover:bg-primary hover:border-primary lg:flex btn btn-outline hover:text-black">Login</button>
+
+          <button
+            class="hidden border-primary bg-primary hover:border-primary hover:bg-white lg:flex btn btn-outline  hover:text-black">Register</button>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+    <!-- banner sec-->
+    <div class="h-[530px] justify-start mt-14 lg:h-[748px] flex  mb-32 max-w-screen-xl mx-auto font-family-sora">
+
+      <!-- text -->
+      <div class=" relative  lg:mx-5 lg:absolute text-left ml-1.5">
+        <h6 class="text-5xl mb-5 mt-7 font-adlam ">Pamper
+          Your Pet,<br> Because They Deserve<br> the Bes</h6>
+        <p class=" animated-text text-xl font-family-sora mb-7 text-gray-600 ">Discover a world of treats, toys, and essential
+          handpicked
+          for<br> your furry friends. Shop now and make tails wag with joy!</p>
+        <button
+          class=" border-primary hover:shadow-2xl  hover:border-primary bg-primary hover:bg-gray-100 hover:text-black lg:flex btn btn-outline ">Find
+          a
+          pet</button>
+          <div class=" absolute w-full  lg:relative lg:-mt-96  -z-10 -mt-24 ">
+            <img src="images/cat-big.png" alt="cat img">
+          </div>
+      </div>
+    </div>
+  </header>
+
+</body>
+
+</html>
